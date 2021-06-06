@@ -1,0 +1,33 @@
+---
+title: "Xaringan presentation"
+subtitle: "University of Wisconsin-Madison theme"
+author: 
+  - "Tuo Wang"
+institute: 
+  - "Department of Biostatistics and Medical Informatics"
+  - "University of Wisconsin-Madison"
+date: "2021/05/24"
+header-includes:
+  \usepackage[dvipsnames]{xcolor}
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["wisconsin", "wisconsin-fonts"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+class: center, middle
+background-image: url(https://raw.githubusercontent.com/ttuowang/BMI-881-Literature-Seminar/master/color-flush-UWlogo-print.png)
+background-size: 250px
+background-position: 9% 15%
+
+# Thanks !
+
+<br>
+
+`r icons::fontawesome("envelope-open")` : twang437@wisc.edu
+`r icons::fontawesome("twitter")` : @alextuowang
+`r icons::fontawesome("id-card")` : tuowang.rbind.io
