@@ -1,10 +1,13 @@
 /*
-Wisconsin theme for Xaringan presentations
+Title: Wisconsin theme for Xaringan presentations
 Author: Tuo Wang
-Updated: 05/24/2021
+Updated: 06/12/2021
+Description: A UW-Madison theme for Xaringan presentations. Modifid based on 
+             Joseph V. Casillas's Rutgers theme
+References: https://github.com/jvcasillas/ru_xaringan
 */
 
-/* Package defaults that we slightly tweak */
+/* Package defaults with sligtly modification*/
 
 a, a > code {
   color: #cc0033; /* rgb(249, 38, 114) */
@@ -103,7 +106,7 @@ th, td { padding: 5px; }
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~*/
-/* UW-madison additions */
+/* UW-Madison additions */
 /*~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Title slide */
@@ -217,11 +220,6 @@ strong {
   font-weight: bold;
 }
 
-/* Add white tag */
-.white {
-  color: white;
-}
-
 /* Color adjustments to headers */
 h1 {
   color: #cc0033;
@@ -255,16 +253,6 @@ wi-blockquote {
 /*~~~~~~~~~~~~~~*/
 /* Highlight    */
 /*~~~~~~~~~~~~~~*/
-
-.highlight-last-item > ul > li, 
-.highlight-last-item > ol > li {
-  opacity: 0.5;
-}
-.highlight-last-item > ul > li:last-of-type,
-.highlight-last-item > ol > li:last-of-type {
-  opacity: 1;
-}
-
 
 .bold-last-item > ul > li:last-of-type,
 .bold-last-item > ol > li:last-of-type {
