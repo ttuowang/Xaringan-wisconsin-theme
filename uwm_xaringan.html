@@ -21,12 +21,146 @@ class: center, middle, inverse, title-slide
 
 ---
 
+# Xaringan presentation
+
+## What is Xaringan?
+
+- [`Xaringan`](https://github.com/yihui/xaringan) is an R package that can be used to create slides
+
+- The name comes from Sharingan from the anime Naruto! 😆
+
+- How to install:
+
+
+```r
+devtools::install_github('yihui/xaringan')
+```
+
+- How to get started:
+
+    - [Xaringan github](https://github.com/yihui/xaringan)
+
+---
+# Xaringan presentation
+
+- Here are some great tutorials:
+
+  - [Xaringan github](https://github.com/yihui/xaringan)
+
+  - [Yihui's tutorial](https://slides.yihui.org/xaringan/#1)
+  
+  - [Making Slides in the Tada!-verse](https://apreshill.github.io/data-vis-labs-2018/slides/06-slides_xaringan.html#1)
+  
+  - [Making slides in R Markdown](http://arm.rbind.io/slides/xaringan.html#1)
+
+- Some useful extensions for `Xaringan`
+
+  - [`xaringanExtra` R package](https://github.com/gadenbuie/xaringanExtra)
+  
+  - [`xaringanthemer` R packge](https://pkg.garrickadenbuie.com/xaringanthemer/index.html)
+  
+  - [Xaringan Gallery](https://xaringan.gallery/)
+  
+  - [`DT` R package for interactive tables](https://rstudio.github.io/DT/)
+
+
+---
+# UW-Madison theme
+
+- How to enable the UW-Madison theme:
+
+
+```md
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["wisconsin", "wisconsin-fonts"]
+```
+
+- The UW-Madison theme for `Xaringan` presentation is suitable to work with a 16:9 aspect ratio
+
+
+```md
+nature:
+  highlightStyle: github
+  highlightLines: true
+  countIncrementalSlides: false
+  ratio: "16:9"
+```
+
+---
+# UW-Madison theme
+
+- We can make `blockquotes` by calling `&lt;wi-blockquote&gt;some texts&lt;/wi-blockquote&gt;`
+
+&lt;wi-blockquote&gt;This is a blocked quote&lt;/wi-blockquote&gt; 
+
+- Highlight text using `**text**` like **this**
+
+- We can change the color of any text by using `.color[text]`. I prepared two color palettes for the users.
+
+  - Palette 1: `.p1-yellow[text]`, `.p1-orange[text]`, `.p1-darkred[text]`, `.p1-purple[text]`
+  - .p1-yellow[text], .p1-orange[text], .p1-darkred[text], .p1-purple[text]
+  
+  - Palette 2: `.p2-green[text]`, `.p2-blue[text]`, `.p2-yellow[text]`, `.p2-red[text]`
+  - .p2-green[text], .p2-blue[text], .p2-yellow[text], .p2-red[text]
+
+
+
+---
+class: bold-last-item
+
+# UW-Madison theme
+
+- add `class: bold-last-item` at the beginning of each slide to switch on the **Bold-Last-Item**
+
+```css
+---
+class: bold-last-item
+```
+
+--
+
+- For example
+
+--
+
+- Bullet list 1
+
+--
+
+- Bullet list 2
+
+--
+
+- Bullet list 3
+
+---
+# Tips
+
+- Do not forget to try the option `yolo: true` under `xaringan::moon_reader` in the YAML metadata of your R Markdown document. A picture of smiling Karl will be randomly insert in the slides.
+
+- Use `DT` for interactive tables.
+
+- [`xaringanExtra` R package](https://github.com/gadenbuie/xaringanExtra) has many other additional and powerful features.
+
+- Use emoji by using `emo` R package 🤔
+
+- Use icon by using `icons` R package &lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"&gt;&lt;/path&gt;&lt;/svg&gt;
+
+- If you don't like the default font size and color, you can change them by using html syntax `&lt;span style='font-size:55pt; color:#cc0033'&gt; some text! &lt;/span&gt;`
+
+---
 class: center, middle
-background-image: url(https://raw.githubusercontent.com/ttuowang/BMI-881-Literature-Seminar/master/color-flush-UWlogo-print.png)
+background-image: url(https://raw.githubusercontent.com/ttuowang/Xaringan-wisconsin-theme/master/uwm-logo/color-flush-UWlogo-print.png)
+
+
 background-size: 250px
 background-position: 9% 15%
 
 &lt;span style='font-size:55pt; color:#cc0033'&gt; Thanks! &lt;/span&gt;
+
+### Add your info at the last slide!
 
 &lt;br&gt;
 

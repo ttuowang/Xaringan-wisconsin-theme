@@ -102,15 +102,15 @@ th, td { padding: 5px; }
   }
 }
 
-/*~~~~~~~~~~~~~~*/
-/* UW additions */
-/*~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+/* UW-madison additions */
+/*~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Title slide */
 
 /* Add image and change bg color */
 .title-slide {
-  background-image: url(https://raw.githubusercontent.com/ttuowang/BMI-881-Literature-Seminar/master/color-flush-UWlogo-print.png);
+  background-image: url(https://raw.githubusercontent.com/ttuowang/Xaringan-wisconsin-theme/master/uwm-logo/color-flush-UWlogo-print.png);
   background-position: 9% 15%;
   background-size: 300px;
   background-color: #fff;
@@ -132,7 +132,7 @@ th, td { padding: 5px; }
 /* H2 fonts */
 .title-slide h2 {
   color: #cc0033;
-  font-size: 36px;
+  font-size: 34px;
   text-align: left;
   text-shadow: none;
   padding-bottom: 20px;
@@ -156,52 +156,6 @@ th, td { padding: 5px; }
   text-shadow: none;
 }
 
-/*~~~~~~~~~~~~~~~~~~*/
-/* SECTION DIVIDERS */
-/*~~~~~~~~~~~~~~~~~~*/
-
-/* section divider red */
-.title-slide-section-red {
-  background-color: #cc0033;
-  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
-}
-
-/* section divider red H1 fonts */
-.title-slide-section-red h1, .title-slide-section-red h2, .title-slide-section-red h3, .title-slide-section-red p {
-  color: #fff;
-}
-
-/* section divider grey */
-.title-slide-section-grey {
-  background-color: #515151;
-  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
-}
-
-/* section divider grey H1 fonts */
-.title-slide-section-grey h1, .title-slide-section-grey h2, .title-slide-section-grey h3 {
-  color: #fff;
-}
-
-.title-slide-section-grey p {
-  color: #fff;
-}
-
-/*~~~~~~~~~~~~~~~~~~*/
-/* FINAL SLIDE      */
-/*~~~~~~~~~~~~~~~~~~*/
-
-.title-slide-final {
-  background-color: #272822;
-  color: #fff;
-  padding-left: 100px;
-  text-shadow: 0 0 20px #333;
-  text-align: center;
-}
-
-.title-slide-final h1 {
-  color: #cc0033;
-}
-
 /*~~~~~~~~~~~~~~~~~~~~*/
 /* Global adjustments */
 /*~~~~~~~~~~~~~~~~~~~~*/
@@ -223,28 +177,43 @@ strong {
   color: #ea5455;
 }
 
-.RUred {
-  color: #cc0033;
-}
-
-/* Add blue tag */
-.blue {
-  color: #0000CC;
+.p1-yellow {
+  color: #f9ed69;
   font-weight: bold;
 }
 
-/* Add grey tag */
-.grey {
-  color: #515151;
+.p1-orange {
+  color: #f08a5d;
+  font-weight: bold;
 }
 
-.lightgrey {
-  color: #818181;
+.p1-darkred {
+  color: #b83b5e;
+  font-weight: bold;
 }
 
-/* Force black */
-.black {
-  color: black;
+.p1-purple {
+  color: #6a2c70;
+  font-weight: bold;
+}
+
+.p2-green {
+  color: #95e1d3;
+  font-weight: bold;
+}
+
+.p2-blue {
+  color: #769fcd;
+  font-weight: bold;
+}
+
+.p2-yellow {
+  color: #fce38a;
+  font-weight: bold;
+}
+
+.p2-red {
+  color: #f38181;
   font-weight: bold;
 }
 
@@ -267,17 +236,17 @@ h3 {
   font-size: 1.5em;
 }
 
-/* ru blockquote */
-ru-blockquote {
+/* wi blockquote */
+wi-blockquote {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 40px;
   margin-right: 40px;
   border-left: solid 10px #cc0033;
-  background-color: #818181;
+  background-color: #dadfe1	;
   padding: 1em;
-  color: #fff;
+  color: #000000;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
