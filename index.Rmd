@@ -10,7 +10,7 @@ date: "2021/06/12"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["wisconsin", "wisconsin-fonts"]
+    css: ["uwm", "uwm-fonts"]
     nature:
       highlightStyle: github
       highlightLines: true
