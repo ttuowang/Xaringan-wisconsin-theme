@@ -72,7 +72,7 @@ devtools::install_github('yihui/xaringan')
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["wisconsin", "wisconsin-fonts"]
+    css: ["uwm", "uwm-fonts"]
 ```
 
 - The UW-Madison theme for `Xaringan` presentation is suitable to work with a 16:9 aspect ratio
