@@ -7,8 +7,7 @@ Description: A UW-Madison theme for Xaringan presentations. Modifid based on
 References: https://github.com/jvcasillas/ru_xaringan
 */
 
-/* Package defaults with sligtly modification*/
-
+/* Package defaults with slightly modification*/
 a, a > code {
   color: #cc0033; /* rgb(249, 38, 114) */
   text-decoration: none;
@@ -175,9 +174,8 @@ strong {
   color: #ea5455;
 }
 
-.bold { font-weight: bold; } /* embolden name on title/end slides */
+.bold { font-weight: bold; }
 
-/* Make bold syntax compile to wi-red */
 .uw-red{
   color: #c5050c;
 }
@@ -280,6 +278,5 @@ uw-blockquote {
 
 .bold-last-item > ul > li:last-of-type,
 .bold-last-item > ol > li:last-of-type {
-  /*color: #ea5455;*/
   font-weight: bold;
 }
