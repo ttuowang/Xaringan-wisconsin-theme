@@ -123,10 +123,10 @@ th, td { padding: 5px; }
 /* H1 fonts */
 .title-slide h1 {
   color: #cc0033;
-  padding-top: 250px;
+  padding-top: 100px;
   font-weight: normal;
-  font-size: 45px;
-  text-align: left;
+  font-size: 60px;
+  text-align: center;
   text-shadow: none;
   padding-bottom: 10px;
   margin-bottom: 10px;
@@ -136,7 +136,7 @@ th, td { padding: 5px; }
 .title-slide h2 {
   color: #cc0033;
   font-size: 34px;
-  text-align: left;
+  text-align: center;
   text-shadow: none;
   padding-bottom: 20px;
   margin-top: 0px;
@@ -147,7 +147,7 @@ th, td { padding: 5px; }
   font-size: 28px;
   font-weight: normal;
   color: #666666;
-  text-align: left;
+  text-align: center;
   text-shadow: none;
   padding-bottom: 15px;
   margin: 0px;
@@ -171,38 +171,55 @@ th, td { padding: 5px; }
 
 /* Color adjustments for text */
 
-/* Make bold syntax compile to RU-red */
 strong {
   color: #ea5455;
 }
 
-.WIred{
-  color: #ea5455;
+.bold { font-weight: bold; } /* embolden name on title/end slides */
+
+/* Make bold syntax compile to wi-red */
+.uw-red{
+  color: #c5050c;
+}
+
+.uw-red-dark{
+  color: #9b0000;
+}
+
+.uw-gray-blue{
+  color: #dadfe1;
+}
+
+.uw-gray-darker{
+  color: #646569;
+}
+
+.uw-gray-darkest{
+  color: #282728;
+}
+
+.uw-anchor-color{
+  color: #0479a8;
 }
 
 .p1-yellow {
   color: #f9ed69;
-  font-weight: bold;
 }
 
 .p1-orange {
   color: #f08a5d;
-  font-weight: bold;
 }
 
 .p1-darkred {
   color: #b83b5e;
-  font-weight: bold;
 }
 
 .p1-purple {
   color: #6a2c70;
-  font-weight: bold;
 }
 
 .p2-green {
   color: #95e1d3;
-  font-weight: bold;
 }
 
 .p2-blue {
@@ -217,7 +234,6 @@ strong {
 
 .p2-red {
   color: #f38181;
-  font-weight: bold;
 }
 
 /* Color adjustments to headers */
@@ -234,14 +250,14 @@ h3 {
   font-size: 1.5em;
 }
 
-/* wi blockquote */
-wi-blockquote {
+/* uw-madison blockquote */
+uw-blockquote {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 40px;
   margin-right: 40px;
-  border-left: solid 10px #cc0033;
+  border-left: solid 20px #c5050c;
   background-color: #dadfe1	;
   padding: 1em;
   color: #000000;
@@ -249,10 +265,18 @@ wi-blockquote {
   -webkit-border-radius: 5px;
 }
 
-
 /*~~~~~~~~~~~~~~*/
 /* Highlight    */
 /*~~~~~~~~~~~~~~*/
+
+.highlight-last-item > ul > li, 
+.highlight-last-item > ol > li {
+  opacity: 0.5;
+}
+.highlight-last-item > ul > li:last-of-type,
+.highlight-last-item > ol > li:last-of-type {
+  opacity: 1;
+}
 
 .bold-last-item > ul > li:last-of-type,
 .bold-last-item > ol > li:last-of-type {

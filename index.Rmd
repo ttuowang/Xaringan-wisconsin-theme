@@ -6,9 +6,7 @@ author:
 institute: 
   - "Department of Biostatistics and Medical Informatics"
   - "University of Wisconsin-Madison"
-date: "2021/05/24"
-header-includes:
-  \usepackage[dvipsnames]{xcolor}
+date: "2021/06/12"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -19,6 +17,10 @@ output:
       countIncrementalSlides: false
       ratio: "16:9"
 ---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
+```
+
 # Xaringan presentation
 
 ## What is Xaringan?
@@ -86,20 +88,29 @@ nature:
 ---
 # UW-Madison theme
 
-- We can make `blockquotes` by calling `<wi-blockquote>some texts</wi-blockquote>`
+- We can make `blockquotes` by calling `<uw-blockquote>some texts</uw-blockquote>`
 
-<wi-blockquote>This is a blocked quote</wi-blockquote> 
+<uw-blockquote>This is a blocked quote</uw-blockquote> 
 
 - Highlight text using `**text**` like **this**
 
-- We can change the color of any text by using `.color[text]`. I prepared two color palettes for the users.
+- Italic text using `*text*` like *this*
+
+- Bold text using `.bold[text]` like .bold[text]
+
+---
+# UW-Madison theme
+
+- We can change the color of any text by using `.color[text]`. I prepared three color palettes for the users. 
+
+  - [Wisconsin palette](https://brand.wisc.edu/web/colors/): `.uw-red[text]`,`.uw-red-dark[text]`,`.uw-gray-blue[text]`,`.uw-gray-darker[text]`, `.uw-gray-darkest[text]`, `.uw-anchor-color[text]`
+  - .uw-red[UW red], .uw-red-dark[UW red dark], .uw-gray-blue[UW gray blue], .uw-gray-darker[UW gray darker], .uw-gray-darkest[UW gray darkest], .uw-anchor-color[UW anchor]
 
   - Palette 1: `.p1-yellow[text]`, `.p1-orange[text]`, `.p1-darkred[text]`, `.p1-purple[text]`
   - .p1-yellow[text], .p1-orange[text], .p1-darkred[text], .p1-purple[text]
   
   - Palette 2: `.p2-green[text]`, `.p2-blue[text]`, `.p2-yellow[text]`, `.p2-red[text]`
   - .p2-green[text], .p2-blue[text], .p2-yellow[text], .p2-red[text]
-
 
 
 ---
@@ -131,25 +142,69 @@ class: bold-last-item
 - Bullet list 3
 
 ---
-# Tips
+class: highlight-last-item
 
-- Do not forget to try the option `yolo: true` under `xaringan::moon_reader` in the YAML metadata of your R Markdown document. A picture of smiling Karl will be randomly insert in the slides.
+# UW-Madison theme
 
-- Use `DT` for interactive tables.
+- add `class: highlight-last-item` at the beginning of each slide to switch on the **Highlight-Last-Item**
+
+--
+
+- For example
+
+--
+
+- Bullet list 1
+
+--
+
+- Bullet list 2
+
+--
+
+- Bullet list 3
+
+---
+```{r xaringan-extra-styles, echo=FALSE}
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+```
+# R code and plot output
+
+```{r, fig.height=4.5, fig.width=9, fig.retina=2, fig.align='center', message=FALSE, warning=FALSE}
+library("tidyverse")
+cars %>% 
+  ggplot(aes(x = dist, y = speed)) + 
+  geom_point() + 
+  geom_smooth(method = 'lm', formula = y ~ poly(x, 2)) + 
+  theme_bw(base_size = 24) 
+```
+
+---
+# Some Tips
+
+- Do not forget to try the option **`yolo: true`** under **`xaringan::moon_reader`** in the YAML metadata of your R Markdown document. A picture of smiling Karl will be randomly insert in the slides.
+
+- Use [`DT`](https://rstudio.github.io/DT/) for interactive tables.
 
 - [`xaringanExtra` R package](https://github.com/gadenbuie/xaringanExtra) has many other additional and powerful features.
 
-- Use emoji by using `emo` R package `r emo::ji("thinking")`
+- Insert emoji by using [`emo`](https://github.com/hadley/emo) R package `r emo::ji("thinking")` `r emo::ji("laugh")` `r emo::ji("+1")`
 
-- Use icon by using `icons` R package `r icons::fontawesome("arrow-circle-right")`
+
+- Insert icon by using [`icons`](https://github.com/mitchelloharawild/icons) R package `r icons::fontawesome("twitter")` `r icons::fontawesome("google")` `r icons::fontawesome("r-project")` `r icons::academicons("arxiv")``
 
 - If you don't like the default font size and color, you can change them by using html syntax `<span style='font-size:55pt; color:#cc0033'> some text! </span>`
+
+- If you want to change any elements of this theme, feel free to edit the source file as you like.
+
+- The best way to learn about `Xaringan` is reading other people's source codes.
 
 ---
 class: center, middle
 background-image: url(https://raw.githubusercontent.com/ttuowang/Xaringan-wisconsin-theme/master/uwm-logo/color-flush-UWlogo-print.png)
-
-
 background-size: 250px
 background-position: 9% 15%
 
